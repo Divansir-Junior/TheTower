@@ -6,14 +6,13 @@
     padding: 0; 
     box-sizing: border-box; 
     font-family: Arial, sans-serif; 
-    color: #ffffff; 
-    
+    color: #000000; 
     overflow-x: hidden;
   }
 
 
 body  { 
-  background-color: rgb(34, 19, 19);
+  background-color: rgb(241, 241, 241);
 
 }
 
