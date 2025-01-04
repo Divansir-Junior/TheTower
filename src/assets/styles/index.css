@@ -16,13 +16,13 @@
 }
 
 
-/* Cabeçalho da página */
+/* ======================= HEADER =================  */
 header { 
     width: 100%;
     height: 90px;
     background-color: black;
     position: fixed;
-    z-index: 10;
+    z-index: 999;
 }
 
 /* Título do site*/
@@ -96,7 +96,7 @@ ul li:hover {
   object-fit: cover; 
 }
 
-/* Corpo princiapl*/
+/*================== MAIN ===================== */
 main {
   width: 100%;
 }
@@ -150,8 +150,15 @@ main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 390px;
   cursor: pointer;
+  position: absolute;
+  top: 0px;
 }
 
+/* Drop do dia */
+#drops { 
+  color: red;
+  border: 5px solid #ffffff;
+}
 /* Nome do grão mestre da semana */
 #gm { 
   color: rgb(23, 233, 4);
@@ -161,7 +168,6 @@ main {
   position: absolute;
   cursor: pointer;
 }
-
 
 /*Animação de digitação */
 @keyframes blink {
@@ -176,83 +182,71 @@ main {
   }
 }
 
-/* Padrão das sections */
-section {
-  margin: 550px auto; 
-  display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
+
+/*================================ SECTIONS =======================================*/
+
+/* Estilização das sections */
+.info-section {
   width: 100%;
-  height: 400px;
-  color: white; 
-  transform: matrix();
-}
-
-/* Imagem da seção principal dos assaltos*/
-.imgMoon {
-  position: absolute;
-  top: 800px;
-  height: 620px;
-  width: 1260px;
-}
-
-/* Descrição abaixo da imagem */
-.desc {
-  position: absolute;
-  color: rgb(251, 32, 32);
-  top: 800px; 
-  left: 70px; 
-  margin-top: 630px; 
-  font-size: smaller;
-}
-
-
-/* Estilos para a tabela */
-table td,th {
-  border: 1px solid #0d1562;
-  padding: 10px;
-  background-image: url(../imgs/BackgroundIndex.jpg);
-  height: 5px;
-  position: relative;  
-  top: 1570px;         
-}
-
-.table-container {
+  padding: 20px;
+  background-color: #373232;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(197, 15, 15, 0.1);
+  display: flex;
   justify-content: center;
-  margin-top: 20px;   
-  padding-bottom: 20px; 
+  align-items: center;
+
 }
 
-.titletb {
-  position: sticky;
-  top: 0; /* Fixação no topo */
-  z-index: 1; /* Garante que o título fique acima do conteúdo */
-  background-color: #030202; /* Fundo para destacar o título */
-  color: red; /* Cor do texto */
+.content {
+  z-index: 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+/* Estilização da imagem */
+.section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da descrição */
+.section-description {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Estilização da tabela */
+.section-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.section-table th,
+.section-table td {
+  padding: 10px;
+  border: 1px solid #f7f3f3;
+}
+
+.section-table th {
+  background-color: #5d4242;
+  font-weight: bold;
   text-align: center;
 }
 
-
-.titletb th {
-  position: sticky; /* Manter no topo ao rolar */
-  top: 0; /* Fixar na posição superior */
-  background-color: #333; /* Fundo do cabeçalho */
-  z-index: 1; /* Garantir que fique acima do conteúdo */
-}
-
-.titletb td, .titletb th {
-  padding: 10px; /* Espaçamento interno */
-  text-align: center; /* Centralizar texto */
-  border: 1px solid #ddd; /* Borda cinza */
-}
-
-.titletb tr:nth-child(even) {
-  background-color: #444; /* Linhas pares com fundo diferente */
-}
-
-.titletb tr:hover {
-  background-color: #555; /* Destaque ao passar o mouse */
+.section-table tr:nth-child(even) {
+  background-color: #000000;
 }
 
 
@@ -308,41 +302,9 @@ table td,th {
   text-align: center;
   top: 0px;
   height: auto;
-  
 
 }
 
-
-/* Adiciona imagem ao clicar nas células */
-td img {
-  width: 200px;
-  height: 100px;
-  cursor: pointer;
-  
-}
-
-/* Estilo para as células do cabeçalho */
-th {
-  color: rgb(255, 255, 255);
-}
-
-
-/* Sem drop */
-.no-content {
-  color: red;
-  text-align: center;
- 
-}
-
-.no-content:hover {
-  color: #f6f6f6;
-}
-
-.max-size {
-  justify-content: center;
-  width: 300px;
-  height: 300px;
-}
 
    /* Menu celular */
   .menuMobile {
