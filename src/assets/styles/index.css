@@ -251,8 +251,7 @@ main {
 
 
 .infoclass {
-  position: absolute;
-  top: 4500px;
+ 
   background: linear-gradient(135deg, #121212, #000000, #B3AFA8, #657079, #101B26);
   padding: 40px 20px; 
   width: 100%; 
@@ -260,6 +259,7 @@ main {
 }
 
 .infoclass .container {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
