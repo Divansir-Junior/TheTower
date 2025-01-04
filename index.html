@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/assets/styles/index.css">
+    <link rel="stylesheet" href="src/assets/styles/darktheme.css">
+    <title>A TORRE</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="assets/imgs/Tower.png" class="logo" alt="Imagem da logo" onclick="Top()">
+            <span>A TORRE</span>
+            <ul>
+                <li >ASSALTOS</li>
+                <li >CLASSES</li>
+                <li>TEMPORADAS</li>
+                <li>EXPANSÕES</li>
+            </ul>
+            <button id="btnTheme" ><img  id="iconTheme" src="assets/imgs/dia.png"  alt=""></button>
+            <!--Menu mobile-->
+            <div id="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- Corpo principal da página -->
+    <main>
+        <div class="container">
+            <img src="assets/imgs/TowerBackground.jpg" alt="Imagem principal do site">
+            <div class="content">
+                <!--Texto digitado -->
+                <div id="showing">
+                    <p id="words">A TORRE
+                    </p>
+                </div>
+                <h1 class="todaygm">ANOITECER GRÃO MESTRE DA SEMANA:
+                    <span id="gm"></span> 
+                </h1>
+                <!-- Nome do drop -->
+                <p id="drops">DROP :</p>
+            </div>
+        </div>
+    </main>
+
+    <section data-target="1" id="assaults">
+        <img src="assets/imgs/MoonHeist.jpg" class="imgMoon" alt="">
+        <span class="desc">(Imagem do assalto a Lua)</span>
+        <!--Assaltos principais -->
+        <table class="">
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>PLANETA</th>
+                    <th>DROP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TRAFICANTE DE ARMAS</td>
+                    <td>EDZ</td>
+                    <td><img src="assets/imgs/ArmdealerLoot.webp" alt="" class="model" value="1"></td>
+                </tr>
+                <tr>
+                    <td>LAGO DAS SOMBRAS</td>
+                    <td>EDZ</td>
+                    <td><img src="assets/imgs/LakeDrop.jpg" alt="" class="model"></td>
+                </tr>
+                <tr>
+                    <td>Canção de Savathun</td>
+                    <td>Titan</td>
+                    <td><img src="assets/imgs/SavathunSongLoot-removebg-preview.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>ACIDENTE DA ÊXODO</td>
+                    <td>Nessus</td>
+                    <td><img src="assets/imgs/ExodusCrashLoot.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Pinaculo invertido</td>
+                    <td>Unknown</td>
+                    <td><img src="assets/imgs/TheInvertedSpireLoot.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>O Pyramidion</td>
+                    <td>Io</td>
+                    <td><img src="assets/imgs/PyramidionLoot.png" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!--Segunda dlc-->
+        <div class="table-container">
+            <span class="bb">ASA</span>->
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ÁRVORE DAS PROBABILIDADES</td>
+                        <td>MERCÚRIO</td>
+                        <td><img src="assets/imgs/Tree of ProbabilitiesLoot.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>UM PLANETA FÉRTIL</td>
+                        <td>MERCÚRIO</td>
+                        <td><img src="assets/imgs/AGardenWorldLoot.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Mente bélica-->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th >NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TERRENO ESTRANHO</td>
+                        <td>MARTE</td>
+                        <td><img src="assets/imgs/Strange TerrainLoot.png.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>VONTADE DE MILHARES</td>
+                        <td>MARTE</td>
+                        <td><img src="assets/imgs/Willofthe ThousandsLoot.png" alt="">(EFEITO)</td>
+                    </tr>
+                    <tr>
+                        <td>O TERMINAL INTUITIVO</td>
+                        <td>NESUS</td>
+                        <td><img src="assets/imgs/TheInsight Terminus.png" alt=""></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+        <!--Renegados -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CARCEREIRO DO NADA</td>
+                        <td>ORLA EMARANHADA</td>
+                        <td><img src="assets/imgs/WardenOfNothingLoot.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>O NINHO</td>
+                        <td>ORLA EMARANHADA</td>
+                        <td style="text-align: center;">?</td>
+                    </tr>
+                    <td>O COVIL OCO</td>
+                        <td>ORLA EMARANHADA</td>
+                        <td><img src="assets/imgs/TheHollowed LairLoot.png" alt=""></td>
+                    </tr>
+                    <td>A CORROMPIDA</td>
+                        <td>CIDADE DOS DESEJOS</td>
+                        <td><img src="assets/imgs/The CorruptedLoot.png" alt=""></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <!--Fortaleza das sombras-->
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FORTALEZA ESCARLATE</td>
+                        <td>LUA</td>
+                        <td class="no-content">?</td>
+                    </tr>
+                    <tr>
+                        <td>NÚCLEO PUTREFEITO</td>
+                        <td>IO</td>
+                        <td class="no-content">?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Além da luz-->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ESCURIDÃO ETERNA</td>
+                        <td>EDZ</td>
+                        <td>DROP</td>
+                    </tr>
+                    <tr>
+                        <td>ALIANÇA SOMBRIA</td>
+                        <td>Nessus</td>
+                        <td>DROP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>REINO CARNÍVORO</td>
+                        <td>Europa</td>
+                        <td>DROP</td>
+                    </tr>
+                    <tr>
+                        <td>FORTALEZA DO TITÃ</td>
+                        <td>Terra</td>
+                        <td>DROP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <title>aaaaa</title>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PLANETA</th>
+                        <th>DROP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>O FIM DO CAOS</td>
+                        <td>Vênus</td>
+                        <td>DROP</td>
+                    </tr>
+                    <tr>
+                        <td>O RETORNO DOS VINGADORES</td>
+                        <td>Io</td>
+                        <td>DROP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Section classes -->
+    <section class="infoclass">
+        <div class="container">
+            <div class="card" id="hunter" onclick="window.location.href='src/pages/hunter/hunter.html'">
+                <img src="assets/imgs/card.png" alt="" >
+                <h1>HUNTER</h1>
+            </div>
+            <div class="card" id="warlock">
+                <img src="assets/imgs/card2.png" alt="">
+                <h1>WARLOCK</h1>
+            </div>
+            <div class="card" id="titan">
+                <img src="assets/imgs/card3.png" alt="">
+                <h1>TITAN</h1>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/anoitecer.js"></script>
+</body>
+</html>

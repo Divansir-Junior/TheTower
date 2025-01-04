@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #030202;
+}
+
+
+/* Cabeçalho da página */
+header { 
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Título do site*/
+span { 
+    color: rgb(239, 237, 237);
+    font-size: x-large;
+    position: fixed;
+    top: 2rem;
+    left: 6rem;
+}
+
+/* Estilização da logo */
+.logo { 
+    width: 90px;
+    height: 65px;
+    cursor: pointer;
+    position: fixed;
+    left: 0px;
+    top: 1rem;
+}
+
+
+/* Estilização header*/
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+    background-color: #030202; 
+    position: fixed;
+    left: 30%;
+    top: 1rem;
+  }
+
+  /* Cor das opções com link do header*/
+  ul li a {
+    text-decoration: none; 
+    color: rgb(189, 190, 190);
+    
+  }
+
+/* Cor das opões do header*/
+ul li {
+  font-size: large;
+  padding: 10px 20px; 
+  color: aliceblue;
+}
+
+ul li:hover { 
+    color: yellow;
+    cursor: pointer;
+}
+
+
+/* Botão de tema */
+#btnTheme {
+  height: 33px;
+  width: 70px;
+  right: 30px;
+  position: fixed;
+  border-radius: 10rem;
+  border-color: aliceblue;
+  overflow: hidden; 
+}
+
+/* Imagem do botão */
+#btnTheme img {
+  width: 30px; 
+  height: 30px; 
+  object-fit: cover; 
+}
+
+/* Corpo princiapl*/
+main {
+  width: 100%;
+}
+
+/* Conteúdo do main */
+.container {
+  position: static;
+}
+
+/* Imagem principal do site*/
+.container img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+}
+
+/* Conteúdo principal  da página */
+.content {
+  padding: 20px;
+  max-width: 800px; 
+  margin: -700px auto 0; 
+  color: rgb(236, 236, 236); 
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* Texto sendo digitado */
+#showing {
+  height: 300px;
+  width: 400px;
+  position: absolute;  
+  top: 225px;              
+  right: 10;             
+  margin-bottom: 5px;  
+  z-index: 0;
+  color: rgb(223, 222, 222);
+  font-size: 90px;       
+}
+
+/* Adiciona o efeito de digitação ao final das letras  */
+#showing::after {
+  content: "|";
+  color: black;
+  animation: blink 1.0s linear infinite;
+
+}
+
+/* Conteúdo  sobre o GM da semana */
+.todaygm { 
+  color: rgb(19, 56, 188);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 390px;
+  cursor: pointer;
+}
+
+/* Nome do grão mestre da semana */
+#gm { 
+  color: rgb(23, 233, 4);
+  font-weight: 400;
+  margin-left: 920px;
+  margin-top: 415px;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+/*Animação de digitação */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 3;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+
+/* Padrão das sections */
+section {
+  margin: 550px auto; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 400px;
+  color: white; 
+  transform: matrix();
+}
+
+/* Imagem da seção principal dos assaltos*/
+.imgMoon {
+  position: absolute;
+  top: 800px;
+  height: 620px;
+  width: 1260px;
+}
+
+/* Descrição abaixo da imagem */
+.desc {
+  position: absolute;
+  color: rgb(251, 32, 32);
+  top: 800px; 
+  left: 70px; 
+  margin-top: 630px; 
+  font-size: smaller;
+}
+
+
+/* Estilos para a tabela */
+table td,th {
+  border: 1px solid #0d1562;
+  padding: 10px;
+  background-image: url(../imgs/BackgroundIndex.jpg);
+  height: 5px;
+  position: relative;  
+  top: 1570px;         
+}
+
+.table-container {
+  justify-content: center;
+  margin-top: 20px;   
+  padding-bottom: 20px; 
+}
+
+.titletb {
+  position: sticky;
+  top: 0; /* Fixação no topo */
+  z-index: 1; /* Garante que o título fique acima do conteúdo */
+  background-color: #030202; /* Fundo para destacar o título */
+  color: red; /* Cor do texto */
+  text-align: center;
+}
+
+
+.titletb th {
+  position: sticky; /* Manter no topo ao rolar */
+  top: 0; /* Fixar na posição superior */
+  background-color: #333; /* Fundo do cabeçalho */
+  z-index: 1; /* Garantir que fique acima do conteúdo */
+}
+
+.titletb td, .titletb th {
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Centralizar texto */
+  border: 1px solid #ddd; /* Borda cinza */
+}
+
+.titletb tr:nth-child(even) {
+  background-color: #444; /* Linhas pares com fundo diferente */
+}
+
+.titletb tr:hover {
+  background-color: #555; /* Destaque ao passar o mouse */
+}
+
+
+.infoclass {
+  position: absolute;
+  top: 4500px;
+  background: linear-gradient(135deg, #121212, #000000, #B3AFA8, #657079, #101B26);
+  padding: 40px 20px; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.infoclass .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; 
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.infoclass .card {
+  flex: 1 1 calc(33.333% - 50px); 
+  max-width: calc(33.333% - 50px); 
+  padding: 20px;
+  border-radius: 0px 0px 200px 200px;
+  border: 2px solid #000000;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(204, 237, 208, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.infoclass .card:hover {
+  cursor: pointer;
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 10px rgba(255, 14, 14, 0.15); 
+  border-color: rgb(255, 255, 255);
+}
+
+/* Imagem dos cards da section de classes*/
+.card img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 0px 0px 200px 200px; 
+}
+
+/* Nome de cada classe */
+.card h1 {
+  color: #030202;
+  position: relative;
+  text-align: center;
+  top: 0px;
+  height: auto;
+  
+
+}
+
+
+/* Adiciona imagem ao clicar nas células */
+td img {
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  
+}
+
+/* Estilo para as células do cabeçalho */
+th {
+  color: rgb(255, 255, 255);
+}
+
+
+/* Sem drop */
+.no-content {
+  color: red;
+  text-align: center;
+ 
+}
+
+.no-content:hover {
+  color: #f6f6f6;
+}
+
+.max-size {
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+
+   /* Menu celular */
+  .menuMobile {
+    background-color: rgba(172, 162, 164, 0.8); 
+    width: 80%;
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(15px); 
+  }
+  
+  /* Botão do menu mobile*/
+  .menuMobile button { 
+    background-color: rgb(172, 162, 164);
+    color: white;
+    width: 60px;
+    height: 53px;
+    position: fixed;
+    right: 15px;
+    top: 5px;
+    font-size: x-large;
+    font-family: "Roboto", serif; 
+    border:  black 5px solid;
+    border-radius: 4%;
+  }
+
+  /* Opções mobile */
+.menuMobile h1 {
+  display: block;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+
+
+/*==================================================================================================== */
+/* Responsividade celular  */
+@media only screen and (max-width: 658px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #6e2e2e;
+    }
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+}
+
+.container img {
+  width: 100%;
+  height: 800px;
+}
+
+#showing {
+  color: #0d1562;
+  font-size: 55px;
+  position: absolute;
+  top: 140px;
+  left: 155px;
+}
+
+#menu {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  top: 15px;
+}
+    
+.menuMobile {
+  position: fixed;
+  z-index: 999;
+  border:3px solid rgb(121, 34, 34);
+}
+
+#menu .line {
+  width: 35px; 
+  height: 5px;  
+  background-color: rgb(246, 241, 241);
+  margin: 7px ; 
+  display: block;
+}
+
+ul { 
+  display: none;
+}
+
+
+#btnTheme {
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+
+}
+
+}
