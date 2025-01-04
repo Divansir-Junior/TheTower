@@ -189,14 +189,13 @@ main {
 .info-section {
   width: 100%;
   padding: 20px;
-  background-color: #373232;
+  background-color: #000000;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(197, 15, 15, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .content {
@@ -228,7 +227,7 @@ main {
 .section-table {
   width: 100%;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   background-color: rgb(0, 0, 0);
 }
@@ -236,11 +235,11 @@ main {
 .section-table th,
 .section-table td {
   padding: 10px;
-  border: 1px solid #f7f3f3;
+  border: 1px solid #11141a;
 }
 
 .section-table th {
-  background-color: #5d4242;
+  background-color: #085181;
   font-weight: bold;
   text-align: center;
 }
@@ -249,9 +248,8 @@ main {
   background-color: #000000;
 }
 
-
+/*============================== SECTION DAS CLASSES ==============================================*/
 .infoclass {
- 
   background: linear-gradient(135deg, #121212, #000000, #B3AFA8, #657079, #101B26);
   padding: 40px 20px; 
   width: 100%; 
