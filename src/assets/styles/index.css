@@ -409,13 +409,13 @@ main {
   position: absolute;
   z-index: 10;
   font-weight: 900;
-  top: 25rem;
-  left: 75px;
+  top: 22rem;
+  left: 125px;
   text-align: center;
-  color: #f2ff00;
-  font-size: 30px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid blue;
+  color: #ffd901e0;
+  font-size: 25px;
+  
+  
   border-radius: 5%;
 }
 
