@@ -292,9 +292,11 @@ main {
 .infoclass .card:hover {
   cursor: pointer;
   transform: translateY(-10px); 
-  box-shadow: 0 6px 10px rgba(255, 14, 14, 0.15); 
-  border-color: rgb(255, 255, 255);
+  box-shadow: 0 6px 10px rgba(77, 45, 112, 0.15); 
+  border-color: #1b4e8f;
+  background-color: #1c4376;
 }
+
 
 /* Imagem dos cards da section de classes*/
 .card img {
@@ -313,7 +315,10 @@ main {
 
 }
 
-
+.card img:hover {
+  border-radius: 0px 0px 200px 200px; 
+  border: 1px solid rgb(5, 130, 239);
+}
    /* Menu celular */
   .menuMobile {
     background-color: rgba(172, 162, 164, 0.8); 
