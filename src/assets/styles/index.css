@@ -260,7 +260,7 @@ main {
 
 /*============================== SECTION DAS CLASSES ==============================================*/
 .infoclass {
-  background: linear-gradient(135deg, #121212, #000000, #B3AFA8, #657079, #101B26);
+  background: url("../imgs/main/BackgroundIndex.jpg") ;
   padding: 40px 20px; 
   width: 100%; 
   box-sizing: border-box; 
