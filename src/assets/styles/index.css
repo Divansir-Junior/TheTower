@@ -123,6 +123,8 @@ main {
   z-index: 999;
 }
 
+
+
 /* Texto sendo digitado */
 #showing {
   height: 300px;
@@ -152,6 +154,11 @@ main {
   cursor: pointer;
   position: absolute;
   top: 0px;
+}
+
+
+.todaygm img {
+  display: none;
 }
 
 /* Drop do dia */
@@ -352,13 +359,14 @@ main {
 main {
   width: 100%;
   height: 900px;
+  
 }
 
 .container {
   width: 500px;
   height: 800px;
-  overflow: hidden; 
-  background-color: white;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -379,25 +387,38 @@ main {
 
 
 .todaygm {
-  position: absolute;
-  margin-bottom: 140;
-  background-color: rgb(240, 9, 9);
-  height: 500px;
+  color: white;
+  padding-top: 15px;
+  left: 0rem;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
   width: 100%;
-  
+  align-items: center;
+  justify-content: center;
 
 }
 
+.todaygm .vanguard  { 
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 #drops {
+  position: absolute;
+  z-index: 10;
   font-weight: 900;
-  margin-top: 75px;
+  top: 25rem;
+  left: 75px;
   text-align: center;
   color: #f2ff00;
-  font-size: 40px;
+  font-size: 30px;
   background-color: rgb(255, 255, 255);
   border: 1px solid blue;
   border-radius: 5%;
 }
+
 #menu {
   display: inline-block;
   cursor: pointer;
