@@ -414,8 +414,6 @@ main {
   text-align: center;
   color: #ffd901e0;
   font-size: 25px;
-  
-  
   border-radius: 5%;
 }
 
@@ -445,14 +443,27 @@ ul {
   display: none;
 }
 
-
 #btnTheme {
   display: none;
 }
+
 .container img {
   width: 100%;
   height: auto;
 
 }
 
+.infoclass .container {
+  display: block;
+}
+
+.infoclass .card {
+  margin-left: 25%;
+  
+}
+
+.card h1 {
+  color: #080707;
+  font-size: 1rem;
+}
 }
