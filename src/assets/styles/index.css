@@ -428,7 +428,7 @@ main {
 .menuMobile {
   position: fixed;
   z-index: 999;
-  border:3px solid rgb(121, 34, 34);
+  border:3px solid rgb(237, 235, 235);
 }
 
 #menu .line {
@@ -449,7 +449,7 @@ ul {
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 100%;
 
 }
 
@@ -460,16 +460,19 @@ ul {
 
 .infoclass .card {
   margin-left: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  max-width: 300px;
+  height: 400px;
 }
 
 .card h1 {
   position: relative;
-  color: #ffffff;
+  color: #fffdfd;
   font-size: 1rem;
-  margin-left: 12rem;
+  top: 2rem;
   font-size: 30px;
-  top: 0;
+  border-bottom: 2px solid rgb(226, 222, 222);
+ 
 }
 
 
