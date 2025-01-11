@@ -353,8 +353,6 @@ main {
   text-align: center;
 }
 
-
-
 /*==================================================================================================== */
 /* Responsividade celular  */
 @media only screen and (max-width: 658px) {
@@ -379,7 +377,7 @@ main {
 }
 
 #showing {
-  color: #0d1562;
+  color: #fbfbff;
   font-size: 55px;
   position: absolute;
   top: 140px;
@@ -393,20 +391,40 @@ main {
   right: 25px;
   top: 15px;
 }
-    
+
+
+#menu ,h1 {
+  color: rgb(243, 243, 243);
+  cursor: pointer;
+  padding: 1px;
+  font-size: 1rem;
+}
+
+.close-button:hover {
+  color: #ff0505;
+  transform: scale(1.1); 
+  transition: 0.4s; 
+  border: 3px solid rgb(255, 0, 0);
+  
+}
+
 .menuMobile {
+  width: 80%;
   position: fixed;
   z-index: 999;
-  border:3px solid rgb(121, 34, 34);
+  border:3px solid rgba(22, 103, 156, 0.7); 
+  background-color: rgba(8, 81, 129, 0.7); 
+  backdrop-filter: blur(10px);
 }
 
 #menu .line {
   width: 35px; 
   height: 5px;  
-  background-color: rgb(246, 241, 241);
+  background-color: rgb(255, 255, 255);
   margin: 7px ; 
   display: block;
 }
+
 
 ul { 
   display: none;

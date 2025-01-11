@@ -94,20 +94,23 @@ function openMenu() {
         const newDiv = document.createElement("div");
         newDiv.classList.add("menuMobile");
         // Adiciona o conteúdo à nova div
-        newDiv.innerHTML = "<h1 id = 'ola'>ASSALTOS</h1> <hr>  <h1>TEMPORADAS </h1><hr> <h1>EXPANSÕES</h1> <hr>";
-        const ola = document.getElementById("id");
-        console.log("aaeae" + ola);
+        newDiv.innerHTML = "<h1>ASSALTOS</h1>   <h1>TEMPORADAS </h1> <h1>EXPANSÕES</h1>  <h1>CLASSES</h1> ";
         // Cria o botão de fechar
-        const button = document.createElement("button");
-        button.innerText = "X";
-        newDiv.appendChild(button); // Adiciona o botão à div
-        // Adiciona a nova div ao corpo do documento
+        const buttonClose = document.createElement("button");
+        //Estilização do botão de fechar
+        buttonClose.style.backgroundColor = "rgba(22, 70, 102, 0.7)";
+        buttonClose.style.border = "3px solid #FFFF";
+        buttonClose.style.borderRadius = "35%";
+        buttonClose.classList.add("close-button"); 
+        buttonClose.innerText = "x";
+        
+        newDiv.appendChild(buttonClose);
         document.body.appendChild(newDiv);
         //Impede a rolagem 
         const body = document.body;
         body.style.overflow = "hidden";
         //Botão de fechar o menu
-        button.addEventListener("click", function() {
+        buttonClose.addEventListener("click", function() {
             newDiv.style.display = "none";
             document.body.removeChild(newDiv);
         });
@@ -115,8 +118,6 @@ function openMenu() {
 }
 
 writing();
-
 openMenu();
 goTo();
-
 changeTheme();
