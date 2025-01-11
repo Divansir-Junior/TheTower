@@ -513,8 +513,8 @@ ul {
 }
 
 .infoclass .card {
-  margin-left: 25%;
-  
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 
 .card h1 {
