@@ -396,8 +396,15 @@ main {
 #menu ,h1 {
   color: rgb(243, 243, 243);
   cursor: pointer;
-  padding: 1px;
+  padding: 0px;
   font-size: 1rem;
+
+}
+
+h1 {
+  border-bottom: 1px solid rgb(255, 245, 245) ;
+  width: 70%; 
+  margin: 0 auto;
 }
 
 .close-button:hover {
@@ -412,8 +419,8 @@ main {
   width: 80%;
   position: fixed;
   z-index: 999;
-  border:3px solid rgba(22, 103, 156, 0.7); 
-  background-color: rgba(8, 81, 129, 0.7); 
+  border:3px solid rgba(13, 45, 71, 0.7); 
+  background-color: rgba(22, 81, 129, 0.7); 
   backdrop-filter: blur(10px);
 }
 
@@ -423,6 +430,7 @@ main {
   background-color: rgb(255, 255, 255);
   margin: 7px ; 
   display: block;
+  
 }
 
 
