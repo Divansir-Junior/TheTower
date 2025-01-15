@@ -94,7 +94,7 @@ function openMenu() {
         const newDiv = document.createElement("div");
         newDiv.classList.add("menuMobile");
         // Adiciona o conteúdo à nova div
-        newDiv.innerHTML = "<h1 id = 'ola'>ASSALTOS</h1> <hr>  <h1>TEMPORADAS </h1><hr> <h1>EXPANSÕES</h1> <hr>";
+        newDiv.innerHTML = "<h1>ASSALTOS</h1> <h1>CLASSES</h1> <h1>TEMPORADAS </h1> <h1>EXPANSÕES</h1> ";
         const ola = document.getElementById("id");
         console.log("aaeae" + ola);
         // Cria o botão de fechar

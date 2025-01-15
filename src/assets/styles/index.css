@@ -428,13 +428,14 @@ main {
 
 #menu ,h1 {
   color: rgb(241, 241, 241);
+ 
 }
     
 .menuMobile {
   position: fixed;
   z-index: 999;
   border:3px solid rgb(237, 235, 235);
-  background-color: rgba(28, 167, 253, 0.5); /* cor de fundo com transparência */
+  background-color: rgba(28, 167, 253, 0.5); 
   backdrop-filter: blur(3px);
 }
 
@@ -445,6 +446,8 @@ main {
   margin: 7px ; 
   display: block;
 }
+
+
 
 ul { 
   display: none;
