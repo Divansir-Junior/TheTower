@@ -366,7 +366,7 @@ main {
   width: 500px;
   height: 800px;
   overflow-x: hidden;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 
 
@@ -423,12 +423,17 @@ main {
   position: fixed;
   right: 25px;
   top: 15px;
+  
 }
     
 .menuMobile {
+  
   position: fixed;
   z-index: 999;
-  border:3px solid rgb(237, 235, 235);
+  border:3px solid rgb(253, 253, 253);
+  width: 80%;
+  background-color: rgba(38, 156, 230, 0.5); /* cor de fundo com transparência */
+  backdrop-filter: blur(3px);
 }
 
 #menu .line {
@@ -455,6 +460,7 @@ ul {
 
 .infoclass .container {
   display: block;
+  
 }
 
 
@@ -474,6 +480,5 @@ ul {
   border-bottom: 2px solid rgb(226, 222, 222);
  
 }
-
 
 }
