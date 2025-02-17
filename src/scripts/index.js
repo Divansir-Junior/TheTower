@@ -95,12 +95,16 @@ function openMenu() {
         newDiv.classList.add("menuMobile");
         // Adiciona o conteúdo à nova div
 <<<<<<< HEAD
+<<<<<<< HEAD
         newDiv.innerHTML = "<h1>ASSALTOS</h1>   <h1>TEMPORADAS </h1> <h1>EXPANSÕES</h1>  <h1>CLASSES</h1> ";
 =======
         newDiv.innerHTML = "<h1>ASSALTOS</h1> <h1>CLASSES</h1> <h1>TEMPORADAS </h1> <h1>EXPANSÕES</h1> ";
         const ola = document.getElementById("id");
         console.log("aaeae" + ola);
 >>>>>>> a4370b6 (Adicionada a opçao classes no menu mobile)
+=======
+        newDiv.innerHTML = "<h1>ASSALTOS</h1>  <h1>CLASSES</h1> <h1>TEMPORADAS</h1> <h1>EXPANSÕES</h1> ";
+>>>>>>> befdeaa (Imagem de logo corrigida)
         // Cria o botão de fechar
         const buttonClose = document.createElement("button");
         //Estilização do botão de fechar

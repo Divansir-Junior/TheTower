@@ -449,19 +449,36 @@ main {
   right: 25px;
   top: 15px;
 }
+<<<<<<< HEAD
 
 #menu ,h1 {
   color: rgb(241, 241, 241);
  
 }
 
+=======
+  
+>>>>>>> befdeaa (Imagem de logo corrigida)
 .menuMobile {
   position: fixed;
   z-index: 999;
   border:3px solid rgb(237, 235, 235);
   background-color: rgba(28, 167, 253, 0.5); 
   backdrop-filter: blur(3px);
+  
 }
+
+.menuMobile h1 {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(253, 251, 251);
+  width: 70%;
+  
+  margin: 60px;
+  
+  
+  
+}
+
 
 #menu .line {
   width: 35px; 
