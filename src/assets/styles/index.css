@@ -164,9 +164,13 @@ main {
 
 /* Drop do dia */
 #drops { 
+<<<<<<< HEAD
   background-color: black;
   color: rgb(249, 207, 0);
   border: 1px solid #ffffff;
+=======
+  color: rgb(234, 255, 0);
+>>>>>>> a0a1a51 (Tamanho de imagens,cores etc)
   
 }
 /* Nome do grão mestre da semana */
@@ -353,37 +357,75 @@ main {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /*==================================================================================================== */
+=======
+
+
+/*================================ RESPONSIVO ===================================== */
+>>>>>>> a0a1a51 (Tamanho de imagens,cores etc)
 /* Responsividade celular  */
 @media only screen and (max-width: 658px) {
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: #6e2e2e;
+    background-color: #000000;
     }
 
 main {
   width: 100%;
+  height: auto;
 }
 
 .container {
   width: 500px;
-  height: 500px;
+  height: 700px;
+  overflow: hidden; 
 }
 
 .container img {
   width: 100%;
-  height: 800px;
+  height: 100%;
+  object-fit: cover; 
+  
 }
 
 #showing {
+<<<<<<< HEAD
   color: #fbfbff;
+=======
+  color: #d4d5da;
+>>>>>>> a0a1a51 (Tamanho de imagens,cores etc)
   font-size: 55px;
   position: absolute;
   top: 140px;
-  left: 155px;
+  left: 5px;
 }
 
+
+.todaygm {
+  font-size: 20px;
+  color: rgb(248, 35, 35);
+  position: absolute;
+  margin-bottom: 140;
+  background-color: rgb(246, 246, 246);
+  border: 1px solid rgb(47, 42, 42);
+  border-radius: 3%;
+  height: 300px;
+  background: url("../imgs/main/StrikeImage.png");
+
+}
+
+#drops {
+  font-weight: 900;
+  margin-top: 75px;
+  text-align: center;
+  color: #f2ff00;
+  font-size: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid blue;
+  border-radius: 5%;
+}
 #menu {
   display: inline-block;
   cursor: pointer;
