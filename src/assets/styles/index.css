@@ -21,6 +21,7 @@ header {
     width: 100%;
     height: 90px;
     background-color: rgb(4, 4, 4);
+    background-color: rgb(4, 4, 4);
     position: fixed;
     z-index: 999;
 }
@@ -169,13 +170,20 @@ main {
   display: none;
 }
 
+
+.todaygm img {
+  display: none;
+}
+
 /* Drop do dia */
 #drops { 
-<<<<<<< HEAD
+
   background-color: black;
   color: rgb(249, 207, 0);
   border: 1px solid #ffffff;
 
+  
+  color: rgb(234, 255, 0);
   
 }
 /* Nome do grão mestre da semana */
@@ -362,13 +370,9 @@ main {
   text-align: center;
 }
 
-<<<<<<< HEAD
+
+
 /*==================================================================================================== */
-=======
-
-
-/*================================ RESPONSIVO ===================================== */
->>>>>>> a0a1a51 (Tamanho de imagens,cores etc)
 /* Responsividade celular  */
 @media only screen and (max-width: 658px) {
   body {
@@ -399,11 +403,7 @@ main {
 }
 
 #showing {
-<<<<<<< HEAD
   color: #fbfbff;
-=======
-  color: #d4d5da;
->>>>>>> a0a1a51 (Tamanho de imagens,cores etc)
   font-size: 55px;
   position: absolute;
   top: 140px;
@@ -448,37 +448,20 @@ main {
   position: fixed;
   right: 25px;
   top: 15px;
+  
 }
-<<<<<<< HEAD
 
 #menu ,h1 {
   color: rgb(241, 241, 241);
+  
  
 }
 
-=======
-  
->>>>>>> befdeaa (Imagem de logo corrigida)
 .menuMobile {
   position: fixed;
   z-index: 999;
-  border:3px solid rgb(237, 235, 235);
-  background-color: rgba(28, 167, 253, 0.5); 
-  backdrop-filter: blur(3px);
-  
+  border:3px solid rgb(254, 252, 252);
 }
-
-.menuMobile h1 {
-  color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(253, 251, 251);
-  width: 70%;
-  
-  margin: 60px;
-  
-  
-  
-}
-
 
 #menu .line {
   width: 35px; 
@@ -489,11 +472,6 @@ main {
   
 }
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> a4370b6 (Adicionada a opçao classes no menu mobile)
 ul { 
   display: none;
 }
